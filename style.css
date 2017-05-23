@@ -1,0 +1,424 @@
+/*
+Project Name: Leili Ansari Portfolio
+Developer @GA in BOS
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+
+/* Site Wide Styles */
+
+body {
+	color: darkslategray;
+	background-color: white;
+	font-weight: 200;
+	width: 100%;
+	/*text-shadow: .5px .5px white;*/
+	float: left;
+	text-align:center;
+	font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+	color: #E5734C;
+	font-family: 'Oswald';
+	font-size: 60px;
+	text-align: left;
+	text-shadow: 1px 1px cornsilk;
+	border-radius: 10px;
+	width: 50%;
+	font-family: 'Oswald', sans-serif;
+	src: url('https://fonts.googleapis.com/css?family=Oswald');
+	float:left;
+}
+
+img {
+	max-height: 80%;
+	max-width: 80%;
+	border-radius: 7px;
+	margin: inherit;
+	float: left;
+	text-align: center;
+}
+
+a {
+	color: coral;
+	text-decoration: none;
+}
+
+a:hover {
+	color: pink;
+}
+
+h2 {
+	color: black;
+	text-align: center;
+	font-weight: lighter;
+	font-size: 1.4em;
+	float: left;
+	width:100%;
+}
+
+h3 {
+	text-align:center;
+	font-size: 1em;
+	float:left;
+	width:100%;
+	font-weight:lighter;
+}
+
+h4 {
+	text-align: left;
+	font-weight: lighter;
+	float: left;
+}
+
+h4{
+	font-size: 1em;
+	float: left;
+}
+
+.header {
+	color: dimgray;
+	font-weight: 300;
+	font-family: 'Oswald', sans-serif;
+	src: url('https://fonts.googleapis.com/css?family=Oswald');
+	float: left;
+}
+
+
+p {
+	float: left;
+	padding: 3%;
+	width: 60%;
+	word-spacing: .2em;
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    float:left;
+    text-align:center;
+}
+
+
+.navbar {
+	float:left;
+	margin: 5%;
+	width: 70%;
+	text-align: center;
+}
+
+.navbar>li {
+    padding: 1%;
+    width: 20%;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    float: left;
+    background: #40ccc4;
+    font-size: 1.2em;
+    letter-spacing: .05em;
+    box-shadow: 2px lightgray;
+}
+
+ul.navbar li:nth-child(-n+3) {
+	margin-right:2%;
+}
+
+.navbar a {
+	float: left;
+	width: 80%;
+}
+
+.hide {
+	display: none;
+	float: left;
+}
+
+.hide ul {
+	width: 100%;
+	float: left;
+}
+
+.hide li {
+	padding-top: 2%;
+	font-size: .9em;
+	display: block;
+	border-top: 1px white solid;
+	float: left;
+	width: 100%;
+}
+
+.hide a {
+	width: 100%;
+}
+
+.inactive {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.active {
+	color: black;
+	text-decoration: none;
+}
+
+li a:hover {
+	color: lightgray;	
+	font-weight: 400;
+}
+
+#logo {
+	float: left;
+	max-height: 400px;
+	width: 20%;
+	size: cover;
+	border-radius: 360px;
+}
+
+.main {
+	height: auto;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    float:left;
+}
+
+.main div {
+	width: 35%;
+	padding: 10px;
+	float: right;
+	margin:5%;
+	background-color:rgba(250,250,250,.85);
+	border-radius: 20px;
+	color: black;
+	font-weight: 500;
+}
+
+.photo-portf {
+	display: block;
+	float:left;
+	width: 30%;
+	margin: 2%;
+}
+
+.photo-portf img {
+	width: 100%;
+	height: auto;
+}
+
+#foodAlbum {
+	width: 30%;
+}
+
+#travelAlbum {
+	width: 30%;
+}
+
+#portraitAlbum {
+	width: 35%;
+}
+
+#natureAlbum {
+	width: 40%;
+}
+
+
+#home {
+    background:url(images/siena-plates.jpg) no-repeat center center fixed;
+}
+
+#about {
+	background:url(images/Leili-red-hair-taking-picture.jpg) no-repeat top center fixed;
+}
+
+
+#resume {
+    background:url(images/chocolate-orange-challah.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#photos {
+    background:url(images/strawbs.jpg) no-repeat top center fixed;
+    background-size: cover;
+}
+
+#writing {
+	background:url(images/ebook-intro-art.jpg) no-repeat top center fixed;
+    background-size: cover;
+    height: 400px;
+}
+.rowOne {
+    height:auto;
+    width: 30%;
+    background:url(images/siena-plates.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+    opacity: .5;
+    float: left;
+}
+
+.rowTwo {
+    height:auto;
+    width: 30%;
+    background:url(images/chocolate-orange-challah.jpg) no-repeat center center fixed;
+    margin: 0 auto;
+    position: relative;
+    opacity: .7;
+    float: left;
+}
+
+.rowThree {
+    height:auto;
+    width: 30%;
+    background:url(images/Gooey-Chocolate-Chip-Walnut-Cookie-Stack-Levain-Copycat.jpg) no-repeat center center fixed;
+    margin: 0 auto;
+    position: relative;
+    opacity: .7;
+    float: left;
+}
+
+.rowFour {
+    height:auto;
+    width: 100%;
+    background:url() no-repeat center center fixed;
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+    opacity: .7;
+    float: left;
+}
+
+/*.rowFive {
+    height:100%;
+    width: 100%;
+    background:url(images/strawbs.jpg) no-repeat center center fixed;
+    margin: 0 auto;
+    position: relative;
+    opacity: 1;
+    float: left;
+}*/
+    
+
+#details {
+    width: 100%;
+    font-weight: 300;
+    font-size: 1em;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+}
+
+.partTwo {
+	float:left;
+	width: 100%;
+}
+
+
+/*work section*/
+
+
+h5.jobs {
+	text-transform: uppercase;
+	color: steelblue;
+	text-shadow: .5px .5px darkblue;
+}
+
+h5.schools {
+	text-transform: uppercase;
+	color: coral;
+	text-shadow: .5px .5px darkblue;
+}
+/*.tile {
+    height: 600px;
+    overflow: hidden;
+    float: left;
+}
+
+.overlay {
+    font-family: 'Oswald', sans-serif;
+    font-size: 5em;
+    vertical-align: middle;
+    text-align: center;
+    color: darkgray;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: rgba(6, 31, 69, 0.8);
+    z-index:50;
+    display: none;
+    margin-top:-350px;
+    pointer-events: none;
+    float: left;
+}
+
+.overlay > div {
+    display: table; 
+    height: 500px; 
+    overflow: hidden;
+    width: 100%;
+    float:left;
+}
+
+.overlay > div > div {
+    display: table-cell; 
+    vertical-align: middle;
+    float: left;
+}
+
+.overlay p {
+    text-align: center;
+    line-height: 1em;
+    padding: 0 20px;
+}*/
+
+.portf-box{
+	width: 33%;
+
+}
+#writing-portf {
+	float: left;
+}
+
+#photo-portf {
+	display: block;
+	float:left;
+
+}
+
+#design-portf {
+	float: right;
+}
+
+/*-------------------------------
+
+/*Responsive Design*/
+
+@media screen and (max-width: 650px){
+	.navbar {
+		display: block; 
+		width: initial;
+	}
+}
+
+

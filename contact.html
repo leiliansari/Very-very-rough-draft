@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="header">
+	<div id="logo"><img src="images/Portfolio-Logo.png"></div>
+	<nav>
+		<ul class="navbar">
+
+   			<li><a class="inactive" href="home.html">Home</a></li>
+   			<li><a class="inactive" href="about.html">About</a></li>
+
+
+  			<li><a>Resume</a>
+  				<div id="dropdown">
+	  				<a class="inactive" href="resume.html">Portfolio</a>
+					<span><a class="inactive" href="writing.html">Writing</a></span>
+					<span><a class="inactive" href="photos.html">Photography</a></span>
+					<span><a class="inactive" href="design.html">Web Design</a></span>
+				</div>
+			</li>
+
+			<li><a class="active" href="contact.html">Contact</a></li>
+
+		</ul>
+	</nav>
+
+<section id="contact" class="main">
+	<div>
+			<h2 class="header">Contact</h2>
+	</div>
+
+</section>
+
+<form>
+<fieldset>
+	<legend> Tell me about yourself </legend>
+	<input type="text" name="name" placeholder="Your full name">
+	<input type="email" name="email" placeholder="Email address">
+	<select>
+		<option type="Reason" value="work">I want to work with you</option>
+		<option type="Reason" value="chat">I just want to chat</option>
+		<option type="Reason" value="other">Other</option>
+	</select>
+</fieldset>
+</form>
+<footer>
+<nav>
+		<ul class="navbar">
+
+   			<li><a class="active" href="home.html">Home</a></li>
+   			<li><a class="inactive" href="about.html">About</a></li>
+
+
+  			<li><a class="dropdown inactive">Portfolio</a>
+  				<div class="hide">
+	  				<ul>
+		  				<li><a class="inactive" href="resume.html">Resume</a></li>
+						<li><a class="inactive" href="writing.html">Writing</a></li>
+						<li><a class="inactive" href="photos.html">Photography</a></li>
+						<li><a class="inactive" href="design.html">Web Design</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<li><a class="inactive" href="contact.html">Contact</a></li>
+
+		</ul>
+	</nav>
+
+</footer>
+
+</fieldset>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="src/js/lightbox.js"></script>
+  	<script src="scripts.js"></script>
+</body>
+</html>

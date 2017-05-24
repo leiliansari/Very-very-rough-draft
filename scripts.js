@@ -4,10 +4,19 @@ $("document").ready(function(){
 	// $(".hide").hide();
 	$(".hidePhoto").hide();
 
-	$(".dropdown").click(dropDown);
+	$(".headNav").click(dropDown);
 
 	function dropDown(){ 
-		$(".hide").slideToggle();
+		$(".headNavHide").slideToggle();
+		// $(".hide").slideDown();
+		// $(".dropdown").attr("id","drawUp");
+		console.log("something happening!");
+		};
+
+	$(".footNav").click(dropDownFoot);
+
+	function dropDownFoot(){ 
+		$(".hidefoot").slideToggle();
 		// $(".hide").slideDown();
 		// $(".dropdown").attr("id","drawUp");
 		console.log("something happening!");
@@ -20,4 +29,24 @@ $("document").ready(function(){
 	// 	console.log("not going up?");
 	// };
 
-	});
+// var mq = window.matchMedia( "(max-width: 650px)" );
+
+// if (mq.matches){
+// //window width is at least 650px
+// 	$(".main>script").hide();
+	
+// }else{
+// 	$("#readMore").html("<span><button>Read More</button></span>");
+// 	$("button").click(showScript);
+
+// 	function showScript(){
+// 		$(".main script").show();
+// 	}
+	
+// //window width is less than 650px
+// }
+
+
+
+
+});

@@ -23,7 +23,7 @@ Developer @GA in BOS
 body {
 	color: darkslategray;
 	background-color: white;
-	font-weight: 200;
+	font-weight: 300;
 	width: 100%;
 	/*text-shadow: .5px .5px white;*/
 	float: left;
@@ -73,7 +73,7 @@ h2 {
 
 h3 {
 	text-align:center;
-	font-size: 1em;
+	font-size: 1.1em;
 	float:left;
 	width:100%;
 	font-weight:lighter;
@@ -86,23 +86,17 @@ h4 {
 }
 
 h4{
-	font-size: 1em;
-	float: left;
-}
-
-.header {
-	color: dimgray;
-	font-weight: 300;
-	font-family: 'Oswald', sans-serif;
-	src: url('https://fonts.googleapis.com/css?family=Oswald');
+	font-size: 1.1em;
 	float: left;
 }
 
 
 p {
 	float: left;
-	padding: 3%;
-	width: 60%;
+	padding-left: 20%;
+	padding-right: 40%;
+	width: 100%;
+	font-size: 1.2em;
 	word-spacing: .2em;
 }
 
@@ -117,7 +111,7 @@ ul {
 
 
 .navbar {
-	float:left;
+	float:right;
 	margin: 5%;
 	width: 70%;
 	text-align: center;
@@ -128,13 +122,13 @@ ul {
     width: 20%;
     text-align: center;
     border: none;
-    border-radius: 8px;
+    border-radius: 2px;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
     float: left;
-    background: #40ccc4;
+    background: #40CCC4;
     font-size: 1.2em;
     letter-spacing: .05em;
     box-shadow: 2px lightgray;
@@ -144,9 +138,10 @@ ul.navbar li:nth-child(-n+3) {
 	margin-right:2%;
 }
 
-.navbar a {
+.navbar li a {
+	text-align: center;
 	float: left;
-	width: 80%;
+	width: 100%;
 }
 
 .hide {
@@ -196,15 +191,15 @@ li a:hover {
 	border-radius: 360px;
 }
 
-.main {
-	height: auto;
+.mainHead {
+	height: 400px;
     width: 100%;
     margin: 0 auto;
     position: relative;
     float:left;
 }
 
-.main div {
+.mainHead div {
 	width: 35%;
 	padding: 10px;
 	float: right;
@@ -215,32 +210,51 @@ li a:hover {
 	font-weight: 500;
 }
 
+.main div {
+	width: 80%;
+	padding: 10px;
+	float: right;
+	margin:5%;
+	background-color:rgba(250,250,250,.85);
+	border-radius: 20px;
+	color: black;
+	font-weight: 500;
+}
+
+.main p {
+	width: 100%;
+	padding: 1%;
+	font-weight: 400;
+	float: left;
+}
+
 .photo-portf {
-	display: block;
 	float:left;
-	width: 30%;
-	margin: 2%;
+	width: 45%;
+	margin: 1%;
+	padding: 0;
 }
 
 .photo-portf img {
 	width: 100%;
-	height: auto;
+	height: 100%;
+	float: left;
 }
 
 #foodAlbum {
-	width: 30%;
+	width: 50%;
 }
 
 #travelAlbum {
-	width: 30%;
+	width: 40%;
 }
 
 #portraitAlbum {
-	width: 35%;
+	width: 45%;
 }
 
 #natureAlbum {
-	width: 40%;
+	width: 45%;
 }
 
 
@@ -268,58 +282,88 @@ li a:hover {
     background-size: cover;
     height: 400px;
 }
+
+/* Home Page */
+
 .rowOne {
-    height:auto;
-    width: 30%;
-    background:url(images/siena-plates.jpg) no-repeat center center fixed;
-    background-size: cover;
+	height: 600px;
+    width: 100%;
+    background:url(images/Leili-red-hair-taking-picture.jpg) no-repeat top center;
+    background-size: 100%;
     margin: 0 auto;
-    position: relative;
+    opacity: .9;
+    float: left;
+}
+
+.rowOne div {
+	background-color: rgba(0,0,0,.8);
+	color: white;
+}
+
+.rowTwo {
+	height: 100%;
+    width: 33%;
+    background:url(images/chocolate-orange-challah.jpg) no-repeat center center;
+    background-size: 100%;
+    margin: 0 auto;
+    opacity: .7;
+    float: left;
+    border: 2px gray solid;
+}
+
+.rowThree {
+	height: inherit;
+    width: 33%;
+    background:url(images/Gooey-Chocolate-Chip-Walnut-Cookie-Stack-Levain-Copycat.jpg) no-repeat center center;
+    background-size: 100%;
+    margin: 0 auto;
+    opacity: .7;
+    float: left;
+    border: 2px gray solid;
+}
+
+.rowFour {
+    height: 100%;
+    width: 33%;
+    background:url(images/old-men-walking.jpg) no-repeat center center;
+    background-size: 100%;
+    margin: 0 auto;
+    opacity: .7;
+    float: left;
+    border: 2px gray solid;
+}
+
+.rowFive {
+	height: 400px;
+    width: 100%;
+    background:url(images/strawbs.jpg) no-repeat center center fixed;
+    background-size: 100%;
+    margin: 0 auto;
     opacity: .5;
     float: left;
 }
 
-.rowTwo {
-    height:auto;
-    width: 30%;
-    background:url(images/chocolate-orange-challah.jpg) no-repeat center center fixed;
-    margin: 0 auto;
-    position: relative;
-    opacity: .7;
-    float: left;
+.rowFive div {
+	width: 70%;
+	float: left;
 }
 
-.rowThree {
-    height:auto;
-    width: 30%;
-    background:url(images/Gooey-Chocolate-Chip-Walnut-Cookie-Stack-Levain-Copycat.jpg) no-repeat center center fixed;
-    margin: 0 auto;
-    position: relative;
-    opacity: .7;
-    float: left;
+
+button {
+	width: 80%;
+	font-family: 'Oswald', sans-serif;
+	font-size: .9em;
+	text-transform: uppercase;
+	color: white;
+	background-color: darkslategray;
+	border-radius: 4px;
 }
 
-.rowFour {
-    height:auto;
-    width: 100%;
-    background:url() no-repeat center center fixed;
-    background-size: cover;
-    margin: 0 auto;
-    position: relative;
-    opacity: .7;
-    float: left;
+#work {
+	height: 400px;
+	width: 100%;
+	float: left;
 }
-
-/*.rowFive {
-    height:100%;
-    width: 100%;
-    background:url(images/strawbs.jpg) no-repeat center center fixed;
-    margin: 0 auto;
-    position: relative;
-    opacity: 1;
-    float: left;
-}*/
-    
 
 #details {
     width: 100%;
@@ -335,7 +379,7 @@ li a:hover {
 }
 
 
-/*work section*/
+/*Resume work section*/
 
 
 h5.jobs {
@@ -349,48 +393,6 @@ h5.schools {
 	color: coral;
 	text-shadow: .5px .5px darkblue;
 }
-/*.tile {
-    height: 600px;
-    overflow: hidden;
-    float: left;
-}
-
-.overlay {
-    font-family: 'Oswald', sans-serif;
-    font-size: 5em;
-    vertical-align: middle;
-    text-align: center;
-    color: darkgray;
-    position: relative;
-    width: 100%;
-    height: 500px;
-    background: rgba(6, 31, 69, 0.8);
-    z-index:50;
-    display: none;
-    margin-top:-350px;
-    pointer-events: none;
-    float: left;
-}
-
-.overlay > div {
-    display: table; 
-    height: 500px; 
-    overflow: hidden;
-    width: 100%;
-    float:left;
-}
-
-.overlay > div > div {
-    display: table-cell; 
-    vertical-align: middle;
-    float: left;
-}
-
-.overlay p {
-    text-align: center;
-    line-height: 1em;
-    padding: 0 20px;
-}*/
 
 .portf-box{
 	width: 33%;
@@ -415,9 +417,8 @@ h5.schools {
 /*Responsive Design*/
 
 @media screen and (max-width: 650px){
-	.navbar {
-		display: block; 
-		width: initial;
+	.navbar li:nth-child(n+2) {
+		display: none; 
 	}
 }
 

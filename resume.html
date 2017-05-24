@@ -13,12 +13,15 @@
    			<li><a class="inactive" href="about.html">About</a></li>
 
 
-  			<li><a>Portfolio</a>
-  				<div id="dropdown">
-	  				<a class="active" href="resume.html">Resume</a>
-					<span><a class="inactive" href="writing.html">Writing</a></span>
-					<span><a cclass="inactive" href="photos.html">Photography</a></span>
-					<span><a cclass="inactive" href="design.html">Web Design</a></span>
+  			
+  			<li><a class="dropdown headNav inactive">Portfolio</a>
+  				<div class="hide headNavHide">
+	  				<ul>
+		  				<li><a class="active" href="resume.html">Resume</a></li>
+						<li><a class="inactive" href="writing.html">Writing</a></li>
+						<li><a class="inactive" href="photos.html">Photography</a></li>
+						<li><a class="inactive" href="design.html">Web Design</a></li>
+					</ul>
 				</div>
 			</li>
 
@@ -77,14 +80,14 @@
 		<nav>
 			<ul class="navbar">
 
-	   			<li><a class="active" href="home.html">Home</a></li>
+	   			<li><a class="inactive" href="home.html">Home</a></li>
 	   			<li><a class="inactive" href="about.html">About</a></li>
 
 
-	  			<li><a class="dropdown inactive">Portfolio</a>
-	  				<div class="hide">
+	  			<li><a class="dropdown footNav inactive">Portfolio</a>
+	  				<div class="hide hidefoot">
 		  				<ul>
-			  				<li><a class="inactive" href="resume.html">Resume</a></li>
+			  				<li><a class="active" href="resume.html">Resume</a></li>
 							<li><a class="inactive" href="writing.html">Writing</a></li>
 							<li><a class="inactive" href="photos.html">Photography</a></li>
 							<li><a class="inactive" href="design.html">Web Design</a></li>
@@ -97,5 +100,8 @@
 			</ul>
 		</nav>
 	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="src/css/lightbox.js"></script>
+  	<script src="scripts.js"></script>
 </body>
 </html>

@@ -34,11 +34,11 @@ body {
 h1 {
 	color: #E5734C;
 	font-family: 'Oswald';
-	font-size: 60px;
+	font-size: 45px;
 	text-align: left;
 	text-shadow: 1px 1px cornsilk;
 	border-radius: 10px;
-	width: 50%;
+	width: 100%;
 	font-family: 'Oswald', sans-serif;
 	src: url('https://fonts.googleapis.com/css?family=Oswald');
 	float:left;
@@ -112,8 +112,9 @@ ul {
 
 .navbar {
 	float:right;
-	margin: 5%;
-	width: 70%;
+	margin-top: 5%;
+	padding-left: 30%;
+	width: 80%;
 	text-align: center;
 }
 
@@ -121,27 +122,56 @@ ul {
     padding: 1%;
     width: 20%;
     text-align: center;
-    border: none;
+    border:none;
     border-radius: 2px;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
     float: left;
-    background: #40CCC4;
+    background: white;
     font-size: 1.2em;
     letter-spacing: .05em;
-    box-shadow: 2px lightgray;
+    margin: 2%;
 }
 
-ul.navbar li:nth-child(-n+3) {
-	margin-right:2%;
-}
+/*ul.navbar li:nth-child(-n+3) {
+	margin:2%;
+}*/
 
 .navbar li a {
 	text-align: center;
 	float: left;
 	width: 100%;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	z-index: 150;
+}
+
+.headerNav {
+	border-bottom:1px #40CCC4 solid;
+	border-bottom-width: 100%;
+}
+
+.footerNav {
+	float: left;
+	width: 100%;
+	font-size: .9em;
+	padding-top: 2%;
+	border-top: 2px black solid;
+}
+
+.footerNav li {
+	background-color: white;
+	float: left;
+	width: 10%;
+	}
+
+.footerNav a {
+	color: black;
 }
 
 .hide {
@@ -168,7 +198,7 @@ ul.navbar li:nth-child(-n+3) {
 }
 
 .inactive {
-	color: white;
+	color: gray;
 	text-decoration: none;
 	text-transform: uppercase;
 }
@@ -200,10 +230,10 @@ li a:hover {
 }
 
 .mainHead div {
-	width: 35%;
-	padding: 10px;
+	width: 40%;
+	padding: 2%;
 	float: right;
-	margin:5%;
+	margin: 5%;
 	background-color:rgba(250,250,250,.85);
 	border-radius: 20px;
 	color: black;
@@ -228,34 +258,76 @@ li a:hover {
 	float: left;
 }
 
+/*Landing Page*/
+
+/*#all {
+	display: none;
+}*/
+
+.landing {
+	width: 100%;
+	height: 650px;
+	background:url(images/Portfolio-Logo-landing.png) no-repeat center center fixed;
+	background-size:cover;
+}
+
+.landing section {
+	background-color: rgba(250,250,250,.95);
+	border-radius: 5px;
+	border: 1px lightgray solid;
+	width: auto;
+	padding: 2%;
+	float: left;
+	text-align: center;
+	margin-left: 40%;
+	margin-top: 20%;
+}
+
+.landing h1 {
+	color: black;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.landing button {
+	background-color: black;
+	color: white;
+	font-size: 2em;
+	padding: 5px;
+	border-radius: 4px;
+	width: 40%;
+}
+
+/* Photography Albums*/
+
 .photo-portf {
 	float:left;
-	width: 45%;
+	width: 40%;
 	margin: 1%;
 	padding: 0;
 }
 
 .photo-portf img {
-	width: 100%;
-	height: 100%;
-	float: left;
+	max-width: 100%;
 }
 
 #foodAlbum {
-	width: 50%;
+	width: 28%;
 }
 
 #travelAlbum {
-	width: 40%;
+	width: 25%;
 }
 
 #portraitAlbum {
-	width: 45%;
+	width: 25%;
 }
 
 #natureAlbum {
-	width: 45%;
+	width: 25%;
 }
+
+/* Page Header Images*/
 
 
 #home {
@@ -263,7 +335,8 @@ li a:hover {
 }
 
 #about {
-	background:url(images/Leili-red-hair-taking-picture.jpg) no-repeat top center fixed;
+	background:url(images/Leili-winter-bio-pic-BW.png) no-repeat top center;
+	background-size: 40%;
 }
 
 
@@ -274,7 +347,7 @@ li a:hover {
 
 #photos {
     background:url(images/strawbs.jpg) no-repeat top center fixed;
-    background-size: cover;
+    background-width: 100%;
 }
 
 #writing {
@@ -283,13 +356,23 @@ li a:hover {
     height: 400px;
 }
 
+#contact {
+	background:url(images/Better-Togheter.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
 /* Home Page */
 
 .rowOne {
-	height: 600px;
+	height: 300px;
     width: 100%;
-    background:url(images/Leili-red-hair-taking-picture.jpg) no-repeat top center;
-    background-size: 100%;
+    background: repeating-linear-gradient(
+  		45deg,
+  		#40CCC4,
+  		#40CCC4 10px,
+  		#fff 10px,
+  		#fff 20px
+);
     margin: 0 auto;
     opacity: .9;
     float: left;
@@ -308,7 +391,6 @@ li a:hover {
     margin: 0 auto;
     opacity: .7;
     float: left;
-    border: 2px gray solid;
 }
 
 .rowThree {
@@ -319,7 +401,6 @@ li a:hover {
     margin: 0 auto;
     opacity: .7;
     float: left;
-    border: 2px gray solid;
 }
 
 .rowFour {
@@ -330,16 +411,20 @@ li a:hover {
     margin: 0 auto;
     opacity: .7;
     float: left;
-    border: 2px gray solid;
 }
 
 .rowFive {
-	height: 400px;
+	height: 300px;
     width: 100%;
-    background:url(images/strawbs.jpg) no-repeat center center fixed;
-    background-size: 100%;
+    background: repeating-linear-gradient(
+  		135deg,
+  		#40CCC4,
+  		#40CCC4 10px,
+  		#fff 10px,
+  		#fff 20px
+  		);
     margin: 0 auto;
-    opacity: .5;
+    opacity: .9;
     float: left;
 }
 
@@ -392,24 +477,22 @@ h5.schools {
 	text-transform: uppercase;
 	color: coral;
 	text-shadow: .5px .5px darkblue;
-}
-
-.portf-box{
-	width: 33%;
 
 }
+
 #writing-portf {
 	float: left;
 }
 
-#photo-portf {
-	display: block;
-	float:left;
-
-}
 
 #design-portf {
 	float: right;
+}
+
+/*Contact Page*/
+
+form {
+	float: left;
 }
 
 /*-------------------------------
@@ -419,6 +502,18 @@ h5.schools {
 @media screen and (max-width: 650px){
 	.navbar li:nth-child(n+2) {
 		display: none; 
+	}
+
+	.mainHead div {
+		width: 100%;
+	}
+
+	div.main div {
+		width: 100%;
+	}
+
+	#foodAlbum,#portraitAlbum,#natureAlbum,#travelAlbum {
+		width: 100%;
 	}
 }
 

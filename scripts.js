@@ -1,6 +1,12 @@
 $("document").ready(function(){
 
+	// $("#landing").click(showSite);
 
+	// function showSite(){
+	// 	$(".landing").slideUp(1200);
+	// 	// $(".landing").hide();
+	// 	$("#all").slideDown();
+	// };
 	// $(".hide").hide();
 	$(".hidePhoto").hide();
 

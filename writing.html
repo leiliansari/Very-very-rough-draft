@@ -9,27 +9,45 @@
 	<div id="header">
 	<div id="logo"><img src="images/Portfolio-Logo.png"></div>
 
-	<nav>
-		<ul class="navbar headerNav">
+	<div class="hamburger">
+			<img src="images/list.svg">
+			<ul>
+				<li class="line"><div><a class="inactive" href="home.html">Home</a></div></li>
+				<li class="line"><div><a class="inactive" href="about.html">About</a></div></li>
+				<li class="line"><div><a class="inactive" href="resume.html">Resume</a></div></li>
+				<li class="line"><div><a class="active" href="writing.html">Writing</a></div></li>
+				<li class="line"><div><a class="inactive" href="photos.html">Photography</a></div></li>
+				<li class="line"><div><a class="inactive" href="design.html">Web Design</a></div></li>
+				<li class="line"><div><a class="inactive" href="contact.html">Contact</a></div></li>
+			</ul>
+		</div>
 
-   			<li><a class="inactive" href="home.html">Home</a></li>
-   			<li><a class="inactive" href="about.html">About</a></li>
+		<nav>
+			<ul class="navbar headerNav show">
 
-  			<li><a class="dropdown headNav inactive">Portfolio</a>
-  				<div class="hide headNavHide">
-  					<ul>
-		  				<li><a class="inactive" href="resume.html">Resume</a></li>
-						<li><a class="active" href="writing.html">Writing</a></li>
-						<li><a class="inactive" href="photos.html">Photography</a></li>
-						<li><a class="inactive" href="design.html">Web Design</a></li>
-					</ul>
-				</div>
-			</li>
+	   			<li><a class="inactive" href="home.html">Home</a></li>
 
-			<li><a class="inactive" href="contact.html">Contact</a></li>
+	   			<li><a class="inactive" href="about.html">About</a></li>
 
-		</ul>
-	</nav>
+
+	  			<li><a class="headNav inactive">Portfolio</a>
+	  				<div class="hide headNavHide">
+		  				<ul>
+			  				<li><a class="inactive" href="resume.html">Resume</a></li>
+							<li><a class="active" href="writing.html">Writing</a></li>
+							<li><a class="inactive" href="photos.html">Photography</a></li>
+							<li><a class="inactive" href="design.html">Web Design</a></li>
+						</ul>
+					</div>
+				</li>
+
+				<li><a class="inactive" href="contact.html">Contact</a></li>
+				<li><button id="navbutton">^</button></li>
+
+				
+			</ul>
+		
+		</nav>
 	</div>
 
 	<section id="writing" class="main">
@@ -52,7 +70,7 @@
    			<li><a class="inactive" href="about.html">About</a></li>
 
 
-  			<li><a class="dropdown footNav inactive">Portfolio</a>
+  			<li><a class="footNav inactive">Portfolio</a>
   				<div class="hide hidefoot">
 	  				<ul>
 		  				<li><a class="inactive" href="resume.html">Resume</a></li>

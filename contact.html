@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contact</title>
+	<title>Contact Leili</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div id="header">
 	<div id="logo"><img src="images/Portfolio-Logo.png"></div>
-	<nav>
-		<ul class="navbar headerNav">
+	<div class="hamburger">
+			<img src="images/list.svg">
+			<ul>
+				<li class="line"><div><a class="inactive" href="home.html">Home</a></div></li>
+				<li class="line"><div><a class="inactive" href="about.html">About</a></div></li>
+				<li class="line"><div><a class="inactive" href="resume.html">Resume</a></div></li>
+				<li class="line"><div><a class="inactive" href="writing.html">Writing</a></div></li>
+				<li class="line"><div><a class="inactive" href="photos.html">Photography</a></div></li>
+				<li class="line"><div><a class="inactive" href="design.html">Web Design</a></div></li>
+				<li class="line"><div><a class="active" href="contact.html">Contact</a></div></li>
+			</ul>
+		</div>
 
-   			<li><a class="inactive" href="home.html">Home</a></li>
-   			<li><a class="inactive" href="about.html">About</a></li>
+		<nav>
+			<ul class="navbar headerNav show">
 
-			<li><a class="dropdown headNav inactive">Portfolio</a>
+	   			<li><a class="inactive" href="home.html">Home</a></li>
+
+	   			<li><a class="inactive" href="about.html">About</a></li>
+
+
+	  			<li><a class="headNav inactive">Portfolio</a>
 	  				<div class="hide headNavHide">
 		  				<ul>
 			  				<li><a class="inactive" href="resume.html">Resume</a></li>
@@ -24,15 +39,18 @@
 					</div>
 				</li>
 
+				<li><a class="active" href="contact.html">Contact</a></li>
+				<li><button id="navbutton">^</button></li>
 
-			<li><a class="active" href="contact.html">Contact</a></li>
-
-		</ul>
-	</nav>
+				
+			</ul>
+		
+		</nav>
+	</div>
 
 <section id="contact" class="main">
 	<div>
-			<h2>Contact</h2>
+			<h1>Contact</h1>
 	</div>
 
 </section>
@@ -43,8 +61,8 @@
 	<input type="text" name="name" placeholder="Your full name">
 	<input type="email" name="email" placeholder="Email address">
 	<select>
-		<option type="Reason" value="work">I want to work with you</option>
-		<option type="Reason" value="chat">I just want to chat</option>
+		<option type="Reason" value="work" placeholder="I Want to work with you">I want to work with you</option>
+		<option type="Reason" value="chat" placeholder="I just want to chat">I just want to chat</option>
 		<option type="Reason" value="other">Other</option>
 	</select>
 </fieldset>
@@ -57,7 +75,7 @@
    			<li><a class="inactive" href="about.html">About</a></li>
 
 
-  			<li><a class="dropdown footNav inactive">Portfolio</a>
+  			<li><a class="footNav inactive">Portfolio</a>
   				<div class="hide hidefoot">
 	  				<ul>
 		  				<li><a class="inactive" href="resume.html">Resume</a></li>

@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Portfolio Home</title>
+	<title>Leili Ansari</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Pompiere|Yanone+Kaffeesatz:100,200,300,600" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="src/css/lightbox.css" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="landing">
+<!-- <div class="landing">
 	<section>
 		<h1>Leili Ansari's Portfolio</h1>
 		<button id="landing">Enter</button>
 	</section>
-</div>
+</div> -->
 
 <section id="all">
 	<div id="header">
-	<div id="logo"><img src="images/Leili-winter-bio-pic-BW.png"></div>
+		<div id="logo"><img src="images/Portfolio-Logo.png"></div>
+		<div class="hamburger">
+			<img src="images/list.svg">
+			<ul>
+				<li class="line"><div><a class="active" href="home.html">Home</a></div></li>
+				<li class="line"><div><a class="inactive" href="about.html">About</a></div></li>
+				<li class="line"><div><a class="inactive" href="resume.html">Resume</a></div></li>
+				<li class="line"><div><a class="inactive" href="writing.html">Writing</a></div></li>
+				<li class="line"><div><a class="inactive" href="photos.html">Photography</a></div></li>
+				<li class="line"><div><a class="inactive" href="design.html">Web Design</a></div></li>
+				<li class="line"><div><a class="inactive" href="contact.html">Contact</a></div></li>
+			</ul>
+		</div>
 
-	<nav>
-		<ul class="navbar headerNav">
+		<nav>
+			<ul class="navbar headerNav show">
 
-   			<li><a class="active" href="home.html">Home</a></li>
-   			<li><a class="inactive" href="about.html">About</a></li>
+	   			<li><a class="active" href="home.html">Home</a></li>
+
+	   			<li><a class="inactive" href="about.html">About</a></li>
 
 
-  			<li><a class="dropdown headNav inactive">Portfolio</a>
-  				<div class="hide headNavHide">
-	  				<ul>
-		  				<li><a class="inactive" href="resume.html">Resume</a></li>
-						<li><a class="inactive" href="writing.html">Writing</a></li>
-						<li><a class="inactive" href="photos.html">Photography</a></li>
-						<li><a class="inactive" href="design.html">Web Design</a></li>
-					</ul>
-				</div>
-			</li>
+	  			<li><a class="headNav inactive">Portfolio<img src="images/chevron-with-circle-down.svg"></a>
+	  				<div class="hide headNavHide">
+		  				<ul>
+			  				<li><a class="inactive" href="resume.html">Resume</a></li>
+							<li><a class="inactive" href="writing.html">Writing</a></li>
+							<li><a class="inactive" href="photos.html">Photography</a></li>
+							<li><a class="inactive" href="design.html">Web Design</a></li>
+						</ul>
+					</div>
+				</li>
 
-			<li><a class="inactive" href="contact.html">Contact</a></li>
+				<li><a class="inactive" href="contact.html">Contact</a></li>
+				<li><button id="navbutton">^</button></li>
 
-		</ul>
-	</nav>
+				
+			</ul>
+		
+		</nav>
 	</div>
 
 	<section id="home" class="mainHead">
 		<div>
 
-			<h2>Food &amp; Travel blogger | Photographer | Grammar Geek</h2>
+			<h1>Leili Ansari</h1>
 
-			<h3>Leili Ansari</h3>
+			<h2>Food &amp; Travel Blogger, Photographer, Grammar Geek.</h2>
 
 		</div>
 
@@ -67,7 +85,7 @@
                     
                 </div>
 			<section id="work">
-                <div class="rowTwo">
+                <div class="rowTwo clearfix">
                     <div class="tile col-1-3">
                         
                        <div>
@@ -81,7 +99,7 @@
                      </div>
                     </div>
 
-                <div class="rowThree">
+                <div class="rowThree clearfix">
                     <div class="tile col-1-3">
                       
                         <div>
@@ -95,7 +113,7 @@
                     </div>
                 </div>
 
-                <div class="rowFour">
+                <div class="rowFour clearfix">
                     <div class="tile col-5-12">
 
                         <div>
@@ -109,7 +127,7 @@
                     </div>
                 </div>    
               </section>
-                <div class="rowFive">
+                <div class="rowFive clearfix">
                     <div class="tile col-5-12">
 
                         <div>
@@ -128,10 +146,11 @@
 		<ul class="navbar footerNav">
 
    			<li><a class="active" href="home.html">Home</a></li>
+
    			<li><a class="inactive" href="about.html">About</a></li>
 
 
-  			<li><a class="dropdown footNav inactive">Portfolio</a>
+  			<li><a class="footNav inactive">Portfolio</a>
   				<div class="hide hidefoot">
 	  				<ul>
 		  				<li><a class="inactive" href="resume.html">Resume</a></li>
@@ -143,8 +162,10 @@
 			</li>
 
 			<li><a class="inactive" href="contact.html">Contact</a></li>
+			<li><button id="backTop">Back to Top</button></li>
 
 		</ul>
+
 	</nav></footer>
 </section>
 	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>

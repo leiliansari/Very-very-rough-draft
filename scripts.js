@@ -7,7 +7,7 @@ $("document").ready(function(){
 	// 	// $(".landing").hide();
 	// 	$("#all").slideDown();
 	// };
-	// $(".hide").hide();
+
 	$(".hidePhoto").hide();
 
 	$(".headNav").click(dropDown);
@@ -19,6 +19,13 @@ $("document").ready(function(){
 		console.log("something happening!");
 		};
 
+
+	$(".hamburger").click(dropNav);
+
+	function dropNav(){
+		$(".line").slideToggle();
+	};
+
 	$(".footNav").click(dropDownFoot);
 
 	function dropDownFoot(){ 
@@ -28,6 +35,36 @@ $("document").ready(function(){
 		console.log("something happening!");
 		};
 
+	$("#navbutton").click(slideUp);
+
+	function slideUp(){
+		$("#header").css("position","absolute");
+		$("#navbutton").hide();
+		$("#downbutton").show();
+	};
+
+	// $("#downbutton").click(fixNav)
+
+	// function fixNav(){
+	// 	$("#header").css("position","fixed");
+	// 	$("#downbutton").hide();
+	// 	$("#navbutton").show();
+	// 	console.log("something");
+	// }
+
+	if ($(window).scrollTop()>0){
+		$("#navbutton").show();
+		console.log("scrolling!");
+	}else{
+		$("#navbutton").hide();
+	};
+
+	$("#backTop").click(backToTop);
+
+	function backToTop(){
+		document.body.scrollTop=0;
+	};
+
 	// $("#drawUp").click(drawItUp);
 
 	// function drawItUp(){
@@ -35,15 +72,17 @@ $("document").ready(function(){
 	// 	console.log("not going up?");
 	// };
 
-// var mq = window.matchMedia( "(max-width: 650px)" );
+var mq = window.matchMedia( "(max-width: 650px)" );
 
-// if (mq.matches){
-// //window width is at least 650px
-// 	$(".main>script").hide();
+if (mq.matches){
+//window width is at least 650px
+	$("#miniNav").show();
+	$("#miniNav").click(function(){
+		$(".inactive").slideToggleoggle();
+	});
 	
-// }else{
-// 	$("#readMore").html("<span><button>Read More</button></span>");
-// 	$("button").click(showScript);
+}else{
+};
 
 // 	function showScript(){
 // 		$(".main script").show();

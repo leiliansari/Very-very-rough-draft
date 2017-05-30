@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Portfolio Home</title>
+	<title>Leili's Photos</title>
 	<link href="src/css/lightbox.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -9,31 +9,48 @@
 <body>
 	<div id="header">
 	<div id="logo"><img src="images/Portfolio-Logo.png"></div>
-	<nav>
-		<ul class="navbar headerNav">
+	<div class="hamburger">
+			<img src="images/list.svg">
+			<ul>
+				<li class="line"><div><a class="inactive" href="home.html">Home</a></div></li>
+				<li class="line"><div><a class="inactive" href="about.html">About</a></div></li>
+				<li class="line"><div><a class="inactive" href="resume.html">Resume</a></div></li>
+				<li class="line"><div><a class="inactive" href="writing.html">Writing</a></div></li>
+				<li class="line"><div><a class="active" href="photos.html">Photography</a></div></li>
+				<li class="line"><div><a class="inactive" href="design.html">Web Design</a></div></li>
+				<li class="line"><div><a class="inactive" href="contact.html">Contact</a></div></li>
+			</ul>
+		</div>
 
-   			<li><a class="inactive" href="home.html">Home</a></li>
-   			<li><a class="inactive" href="about.html">About</a></li>
+		<nav>
+			<ul class="navbar headerNav show">
+
+	   			<li><a class="inactive" href="home.html">Home</a></li>
+
+	   			<li><a class="inactive" href="about.html">About</a></li>
 
 
-  			<li><a class="dropdown headNav inactive">Portfolio</a>
-  				<div class="hide headNavHide">
-  					<ul>
-		  				<li><a class="inactive" href="resume.html">Resume</a></li>
-						<li><a class="inactive" href="writing.html">Writing</a></li>
-						<li><a class="active" href="photos.html">Photography</a></li>
-						<li><a class="inactive" href="design.html">Web Design</a></li>
-					</ul>
-				</div>
-			</li>
+	  			<li><a class="headNav inactive">Portfolio</a>
+	  				<div class="hide headNavHide">
+		  				<ul>
+			  				<li><a class="inactive" href="resume.html">Resume</a></li>
+							<li><a class="inactive" href="writing.html">Writing</a></li>
+							<li><a class="active" href="photos.html">Photography</a></li>
+							<li><a class="inactive" href="design.html">Web Design</a></li>
+						</ul>
+					</div>
+				</li>
 
-			<li><a class="inactive" href="contact.html">Contact</a></li>
+				<li><a class="inactive" href="contact.html">Contact</a></li>
+				<li><button id="navbutton">^</button></li>
 
-		</ul>
-	</nav>
+				
+			</ul>
+		
+		</nav>
 	</div>
 
-	<section id="photos" class="main">
+	<section id="photos" class="mainHead">
 		<div>
 			<h1>Photography</h1>
 
@@ -100,7 +117,7 @@
 
 		<a href="images/yin-and-yolk-lock.jpg" class="hidePhoto" data-lightbox="travel"><img src="images/yin-and-yolk-lock.jpg" alt="yin-and-yolk-lock"></a>
 
-		<a href="images/Kirkegaard-cemetery.jpg" class=hidePhoto" data-lightbox="travel"><img src="images/Kirkegaard-cemetery.jpg" alt="Kirkegaard-cemetery-Copenhagen"></a>
+		<a href="images/Kirkegaard-cemetery.jpg" class="hidePhoto" data-lightbox="travel"><img src="images/Kirkegaard-cemetery.jpg" alt="Kirkegaard-cemetery-Copenhagen"></a>
 
 
 
@@ -150,7 +167,7 @@
 	   			<li><a class="inactive" href="about.html">About</a></li>
 
 
-	  			<li><a class="dropdown footNav inactive">Portfolio</a>
+	  			<li><a class="footNav inactive">Portfolio</a>
 	  				<div class="hide hidefoot">
 		  				<ul>
 			  				<li><a class="inactive" href="resume.html">Resume</a></li>
